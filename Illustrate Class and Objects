@@ -1,0 +1,28 @@
+AIM: To illustrate the concept of class and objects in C++.
+ALGORITHM:
+● Start the program.
+● Define a class with data members and member functions.
+● Create objects of the class.
+● Access data members and member functions using objects.
+● Display the output.
+● Stop the program.
+PROGRAM:
+#include <iostream>
+using namespace std;
+class Student {
+public:
+string name;
+int rollNo;
+void display() {
+cout << "Name: " << name << endl;
+cout << "Roll No: " << rollNo << endl;
+}
+};
+int main() {
+Student s1; // Object creation
+s1.name = "John";
+s1.rollNo = 101;
+cout << "Student Details:" << endl;
+s1.display();
+return 0;
+}
